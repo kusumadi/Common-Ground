@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Common Ground · Mastertech</title>
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><a href="./" class="brand"><span class="mark" aria-hidden="true">↳</span> Common Ground</a><span class="badge">MASTERTECH PROTOTYPE</span></header>
+<main>
+<div class="course"><span>DEMO UNIT</span> / Applied Mathematics / Week 3</div>
+<h1>Teach it your way.</h1>
+<p class="intro">Help an AI apprentice work out how much fence a garden needs. Explain in English, Bahasa Malaysia, or a mix of both.</p>
+<nav aria-label="Demo role"><button id="student-tab" aria-pressed="true">Student view</button><button id="lecturer-tab" aria-pressed="false">Lecturer view</button></nav>
+<section id="student">
+<div class="layout">
+<article class="card"><span class="eyebrow">01 · TEACH THE APPRENTICE</span><h2>Fence or floor space?</h2>
+<p class="quote">“The garden is 6 m by 4 m. I multiplied them, so we need 24 metres of fencing.”</p>
+<p>How would you correct the apprentice?</p>
+<form id="teach-form"><label for="explanation">Your private practice explanation</label><textarea id="explanation" maxlength="1200" rows="4" required placeholder="Type in your preferred language…"></textarea><div class="examples"><button type="button" id="sample-good">Try a Malay example</button><button type="button" id="sample-area">Try an area mix-up</button></div><button class="primary" id="teach" type="submit">Teach the apprentice</button></form>
+<p class="small" id="mode" role="status"></p></article>
+<aside class="card context"><span class="eyebrow">LECTURER-SET LEARNING OUTCOME</span><h2>Explain perimeter</h2><p>Calculate the distance around a rectangle and distinguish it from the area inside.</p>
+<svg viewBox="0 0 260 155" role="img" aria-label="Rectangular garden, six metres wide and four metres high"><rect x="43" y="36" width="174" height="91" rx="6"/><text x="130" y="24" text-anchor="middle">6 m</text><text x="230" y="87">4 m</text></svg>
+<p class="small">Fictional course materials · ungraded practice</p></aside>
+</div>
+<section class="card step" id="replay" hidden aria-live="polite"></section>
+<section class="card step" id="transfer" hidden><span class="eyebrow">03 · TRY IT YOURSELF</span><h2>New garden, your turn</h2><p>A garden is 9 m long and 4 m wide. How many metres of fence does it need?</p>
+<form id="transfer-form"><label for="answer">Fence length in metres</label><input id="answer" type="number" min="0" max="999" required>
+<fieldset><legend>Which English course term means distance around the edge?</legend><label><input type="radio" name="term" value="area" required> Area</label><label><input type="radio" name="term" value="perimeter"> Perimeter</label></fieldset>
+<button class="primary">Check my answer</button></form></section>
+<section class="card step" id="result" hidden aria-live="polite"></section>
+</section>
+<section id="lecturer" hidden><article class="card"><span class="eyebrow">LECTURER VIEW · DEMO UNIT ONLY</span><h2>What to revisit in class</h2><p class="small">Only explicitly submitted demo responses appear here. This is a role preview on one browser, not Curtin authentication.</p><div id="summary" aria-live="polite"></div><div id="submissions"></div><button type="button" id="clear" class="secondary">Clear demo submissions</button></article></section>
+</main>
+<footer>Fictional course unit · Use sample responses only</footer>
+</body></html>
